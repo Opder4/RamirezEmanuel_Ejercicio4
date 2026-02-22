@@ -38,16 +38,452 @@ if (dato>=1 && dato<=4 && (persistencia=="s" || persistencia=="n") && usuarios >
     switch (incidente)
     {
         case 1:
-
+            switch (activo)
+            {
+                case 1:
+                    if (usuarios<100 || dato==1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios<1000 || dato==2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if ((usuarios<5000 || dato==3) && persistencia=="s" )
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if ((usuarios>=5000 || dato==4) && persistencia=="s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                        break;
+                case 2:
+                    if (dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                        break;
+                case 3:
+                    if (dato == 3)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 4)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 4:
+                    if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios<1000)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 2 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (usuarios>=1000 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Activo no válido");
+                    break;
+            }
             break;
         case 2:
-
+            switch (activo)
+            {
+                case 1:
+                    if (usuarios < 100 || dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000 || dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if ((usuarios < 5000 || dato == 3) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if ((usuarios >= 5000 || dato == 4) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 2:
+                    if (dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 3:
+                    if (dato == 3)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 4)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 4:
+                    if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 2 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (usuarios >= 1000 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Activo no válido");
+                    break;
+            }
             break;
         case 3:
-
+            switch (activo)
+            {
+                case 1:
+                    if (usuarios < 100 || dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000 || dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if ((usuarios < 5000 || dato == 3) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if ((usuarios >= 5000 || dato == 4) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 2:
+                    if (dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 3:
+                    if (dato == 3)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 4)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 4:
+                    if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 2 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (usuarios >= 1000 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Activo no válido");
+                    break;
+            }
             break;
         case 4:
-
+            switch (activo)
+            {
+                case 1:
+                    if (usuarios < 100 || dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000 || dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if ((usuarios < 5000 || dato == 3) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if ((usuarios >= 5000 || dato == 4) && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 2:
+                    if (dato == 1)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 3:
+                    if (dato == 3)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (dato == 4)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 3 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (dato == 4 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                case 4:
+                    if (dato == 2)
+                    {
+                        Console.WriteLine("Severidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Activar antivirus");
+                    }
+                    else if (usuarios < 1000)
+                    {
+                        Console.WriteLine("Severidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervición");
+                    }
+                    else if (dato == 2 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Activar protocolos de seguridad");
+                    }
+                    else if (usuarios >= 1000 && persistencia == "s")
+                    {
+                        Console.WriteLine("Severidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Acciones de prevención inmediatas");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Activo no válido");
+                    break;
+            }
             break;
         default:
             Console.WriteLine("Incidente no válido");
