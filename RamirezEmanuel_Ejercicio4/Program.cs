@@ -35,7 +35,24 @@ int usuarios=int.Parse(Console.ReadLine());
 Console.WriteLine("");
 if (dato>=1 && dato<=4 && (persistencia=="s" || persistencia=="n") && usuarios >= 0)
 {
+    switch (incidente)
+    {
+        case 1:
 
+            break;
+        case 2:
+
+            break;
+        case 3:
+
+            break;
+        case 4:
+
+            break;
+        default:
+            Console.WriteLine("Incidente no válido");
+            break;
+    }
 }
 else
 {
