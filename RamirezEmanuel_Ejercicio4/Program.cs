@@ -494,3 +494,4 @@ else
 {
     Console.WriteLine("Los datos ingresados no son válidos");
 }
+Console.WriteLine("");
